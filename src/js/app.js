@@ -8,45 +8,46 @@ var UI = require('ui');
 //var Vector2 = require('vector2');
 
 
-
+/* Cards */
 var main = new UI.Card({
-  title: 'Pebble.js',
+  title: 'Make me a Drink',
   icon: '/logo.bmp',
-  subtitle: 'Hello World!',
+  subtitle: '',
   body: 'Press any button.',
   subtitleColor: 'indigo', // Named colors
   bodyColor: '#9a0036' // Hex colors
 });
 
-main.show();
-
-
-/*
-main.on('click', 'up', function(e) {
-  var menu = new UI.Menu({
+var drinkMenu = new UI.Menu({
     sections: [{
       items: [{
-        title: 'Pebble.js',
-        icon: 'images/menu_icon.png',
-        subtitle: 'Can do Menus'
+        title: 'Coffee'
       }, {
-        title: 'Second Item',
-        subtitle: 'Subtitle Text'
+        title: 'Alcohol',
       }, {
-        title: 'Third Item',
-      }, {
-        title: 'Fourth Item',
+        title: 'Other',
       }]
     }]
   });
+
+main.show();
+
+/*drinkMenu.on('click', 'select', function(e)
+  {
+
+  })*/
+
+/*
+main.on('click', 'up', function(e) {
   menu.on('select', function(e) {
     console.log('Selected item #' + e.itemIndex + ' of section #' + e.sectionIndex);
     console.log('The item is titled "' + e.item.title + '"');
   });
   menu.show();
 });
+*/
 
-main.on('click', 'select', function(e) {
+/*main.on('click', 'select', function(e) {
   var wind = new UI.Window({
     backgroundColor: 'black'
   });
