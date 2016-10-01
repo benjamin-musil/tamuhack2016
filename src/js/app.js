@@ -5,11 +5,13 @@
  */
 
 var UI = require('ui');
-var Vector2 = require('vector2');
+//var Vector2 = require('vector2');
+
+
 
 var main = new UI.Card({
   title: 'Pebble.js',
-  icon: 'images/menu_icon.png',
+  icon: '/logo.bmp',
   subtitle: 'Hello World!',
   body: 'Press any button.',
   subtitleColor: 'indigo', // Named colors
@@ -18,6 +20,8 @@ var main = new UI.Card({
 
 main.show();
 
+
+/*
 main.on('click', 'up', function(e) {
   var menu = new UI.Menu({
     sections: [{
@@ -86,3 +90,4 @@ main.on('click', 'down', function(e) {
   card.body('The simplest window type in Pebble.js.');
   card.show();
 });
+*/
